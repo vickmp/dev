@@ -1,6 +1,6 @@
 # DEV Environment
 
-In this repository you can find the configuration files for tools I use in my laptop with Manjaro + i3wm for developing . They are mainly:
+In this repository you can find the configuration files for tools I use in my laptop with Manjaro + i3wm for developing. They are mainly:
 
 - [Git](https://github.com/git/git)
 - [i3](https://i3wm.org/docs/userguide.html)
