@@ -27,13 +27,13 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminal
+bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+d exec "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'monospace-10' -p 'dmenu%'"
+bindsym $mod+space exec "rofi -modi drun -font 'noto-mono 13' -lines 5 -columns 2 -show-icons -show drun"
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -61,8 +61,6 @@ bindsym $mod+F2 exec vivaldi-stable
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F4 exec code
-bindsym $mod+F5 exec terminal -e "ssh cyber@5.189.169.248"
-bindsym $mod+F6 exec terminal -e "ssh tiafraud@192.168.237.203"
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
@@ -120,9 +118,9 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
-# toggle sticky
+# toggle stickyd
 bindsym $mod+Shift+s sticky toggle
 
 # focus the parent container
